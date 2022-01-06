@@ -1,0 +1,28 @@
+#un {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    color: red
+}
+#deux {
+    position: relative;
+    top : 50px;
+    left: 50px;
+}
+.introduction
+{
+    color: blue;
+}
+#pdp {
+    display: block;
+    border-radius: 200px;
+    box-sizing: border-box;
+    background-color: #DDD;
+    border: 5px solid #cfd8dc;
+}
+
+
+#img-pdp {
+    height: 200px;
+    width: 200px
+}

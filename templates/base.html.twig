@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+		<link href="https://bootswatch.com/5/darkly/bootstrap.min.css" rel="stylesheet"/>        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <link href="C:\Users\Administrateur\portfolio\projet\public\css.css" rel="stylesheet"/>        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+		{% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+	
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="/portfolio/index">Baptiste BORDENAVE</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarColor01">
+			  <ul class="navbar-nav me-auto">
+				<li class="nav-item">
+				  <a class="nav-link" href="/portfolio/index">Acceuil
+					<span class="visually-hidden">(current)</span>
+				  </a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/portfolio/passion">Ma passion</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/portfolio/contribution">Mes contributions</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/portfolio/competences">Mon portfolio</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/portfolio/cv">CV</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="/portfolio/contact">Contact</a>
+				</li>
+
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<div class="container">
+        {% block body %}{% endblock %}
+		</div>
+    </body>
+	<footer>
+		<div class="container">
+		<hr>
+			<center><p>Baptiste Bordenave © Copyright 2021</p>
+			<p>baptiste.bordenave@etu.univ-st-etienne.fr</p>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licence Creative Commons Attribution - Pas d&#39;Utilisation Commerciale - Pas de Modification 4.0 International</a>.<br></center>
+		</div>
+	</footer>
+</html>
