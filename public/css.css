@@ -21,29 +21,10 @@
     width: 35%;
     height: 35%;
   }
-  
-.pdpcv {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    width: 190px;
-    height: 175px;
-    right: 290px;
-    margin: 0 0 0 525px;
-    padding: 20px;
-    overflow: hidden;
-    border: none;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    background: url("https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/a/0/f/a0fc73919d_50166390_chaton.jpg");
-    background-position: 50% 50%;
-    -webkit-background-origin: padding-box;
-    background-origin: padding-box;
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-    -webkit-background-size: cover;
-    background-size: cover;
-  }
+.carrousel {
+    display: block;
+    margin: 0px auto;
+}
   .cvbloc1 {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
