@@ -13,16 +13,78 @@
 {
     color: blue;
 }
-#pdp {
+
+.centrer {
     display: block;
-    border-radius: 200px;
-    box-sizing: border-box;
-    background-color: #DDD;
-    border: 5px solid #cfd8dc;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 35%;
+  }
+  
+.pdpcv {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 190px;
+    height: 175px;
+    right: 290px;
+    margin: 0 0 0 525px;
+    padding: 20px;
+    overflow: hidden;
+    border: none;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: url("https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/a/0/f/a0fc73919d_50166390_chaton.jpg");
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .cvbloc1 {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100%;
+    height: auto;
+    right: 100%;
+    left: 100%;
+    padding: 20px;
+    overflow: hidden;
+    border: none;
+    color: rgba(255,255,255,1);
+    text-overflow: ellipsis;
+    background: #283135;
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  }
+  .contact{
+    padding-left: 20px;
+    margin-right: auto;
 }
-
-
-#img-pdp {
-    height: 200px;
-    width: 200px
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.exp-logo{
+    flex: 0 0 100%;
+    max-width: 100px;
+}
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }

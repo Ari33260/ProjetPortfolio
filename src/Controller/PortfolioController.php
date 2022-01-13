@@ -9,18 +9,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class PortfolioController extends AbstractController
 {
     /**
-     * @Route("/portfolio", name="portfolio")
+     * @Route("/portfolio/", name="index")
      */
     public function portfolio(): Response
-    {
-        return $this->render('portfolio/index.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
-    }
-    /**
-     * @Route("/portfolio/index", name="index")
-     */
-    public function index(): Response
     {
         return $this->render('portfolio/portfolio.html.twig', [
             'controller_name' => 'PortfolioController',

@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-		<link href="https://bootswatch.com/5/darkly/bootstrap.min.css" rel="stylesheet"/>        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        <link href="C:\Users\Administrateur\portfolio\projet\public\css.css" rel="stylesheet"/>        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
 		{% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+		<link href="https://bootswatch.com/5/darkly/bootstrap.min.css" rel="stylesheet"/>        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <link href="{{ asset('css.css') }}" rel="stylesheet"/>        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		{% endblock %}
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
@@ -26,15 +26,12 @@
 			<div class="collapse navbar-collapse" id="navbarColor01">
 			  <ul class="navbar-nav me-auto">
 				<li class="nav-item">
-				  <a class="nav-link" href="/portfolio/index">Acceuil
+				  <a class="nav-link" href="/portfolio/">Acceuil
 					<span class="visually-hidden">(current)</span>
 				  </a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="/portfolio/passion">Ma passion</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="/portfolio/contribution">Mes contributions</a>
+				  <a class="nav-link" href="/portfolio/passion">Mes passions</a>
 				</li>
 				<li class="nav-item">
 				  <a class="nav-link" href="/portfolio/competences">Mon portfolio</a>

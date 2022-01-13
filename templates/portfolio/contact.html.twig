@@ -4,9 +4,51 @@
 
 {% block body %}
 <br>
-<h1>Page de contact</h1>
-<p style="float:right"><img src="https://cdn.pixabay.com/photo/2017/07/31/16/18/engineer-2558705_960_720.jpg" width=300 /></p>
-<p>blablablablablabla</p>
-<div style="clear:both"></div>
+<h1>Me contacter</h1>
 
+
+<form>
+    <fieldset>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Adresse Mail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple : jean.lassalle@assemblee-nationale.fr">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Prénom</label>
+        <input type="message" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple : Jean">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Nom</label>
+        <input type="message" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple : Lassalle">
+      </div>
+      <div class="form-group">
+        <label for="exampleSelect1" class="form-label mt-4">Ma région</label>
+        <select class="form-select" id="exampleSelect1">
+          <option>Nouvelle-Aquitaine</option>
+          <option>Auvergne-Rhône-Alpes</option>
+          <option>Occitanie</option>
+          <option>Ile-de-France</option>
+          <option>Hauts-de-France</option>
+          <option>Pays-de-La-Loire</option>
+          <option>Bretagne</option>
+          <option>Centre-Val-de-Loire</option>
+          <option>Grand-Est</option>
+          <option>Provence-Alpes-Côtes-d'Azur</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleTextarea" class="form-label mt-4">Mon message</label>
+        <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input mt-4" type="checkbox" value="" id="flexCheckChecked" checked="">
+        <label class="form-check-label mt-4" for="flexCheckChecked">
+          J'accepte que le blog partage mes informations personelles afin d'améliorer votre expérience sur les services Google
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary mt-4">Envoyer !</button>
+    </fieldset>
+  </form>
+  
+  
 {% endblock %}
