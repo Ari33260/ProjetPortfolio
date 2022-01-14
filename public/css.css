@@ -13,6 +13,10 @@
 {
     color: blue;
 }
+.carrousel {
+    display: block;
+    margin: 0px auto;
+}
 
 .centrer {
     display: block;
